@@ -1,4 +1,5 @@
 
+"""Process the first reaction in the USPTO dataset using a llm model with structured output."""
 
 from xsdata.formats.dataclass.context import XmlContext
 from xsdata.formats.dataclass.parsers import XmlParser
@@ -31,7 +32,7 @@ ser_config = SerializerConfig(indent="  ")
 serializer = XmlSerializer(context=context, config=ser_config)
 
 elt_count = count_elements(INPDIR / "pftaps19760106_wk01.xml")
-ex_count = 10
+ex_count = 5
 exs = []
 
 ex_idx = random.sample(range(elt_count), ex_count)

@@ -1,3 +1,5 @@
+"""Test the generated xsdata model."""
+
 from xsdata_pydantic.bindings import XmlParser as PydanticXmlParser
 from xsdata.formats.dataclass.parsers.config import ParserConfig
 from generated import ReactionList
