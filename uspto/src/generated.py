@@ -62,6 +62,9 @@ class PropertyTypeValue(Enum):
 
 
 class ReactionActionAction(Enum):
+    """The type of action taken in producing the reaction. 
+    Make sure to map each action to one of these types.
+    If you cannot find a match do not record the action at all."""
     ADD = "Add"
     APPARATUS_ACTION = "ApparatusAction"
     CONCENTRATE = "Concentrate"
@@ -87,8 +90,8 @@ class ReactionActionAction(Enum):
     WAIT = "Wait"
     WASH = "Wash"
     YIELD = "Yield"
-    EVAPORATE = "Evaporate" # TODO REVIEW Added by me
-    SEPARATE = "Separate" # TODO REVIEW Added by me
+    # EVAPORATE = "Evaporate" # TODO REVIEW Added by me
+    # SEPARATE = "Separate" # TODO REVIEW Added by me
 
 
 class ReactionSmiles(BaseModel):
