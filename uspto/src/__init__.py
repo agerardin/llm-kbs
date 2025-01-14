@@ -1,0 +1,31 @@
+from uspto.src.generated import (
+    Appearance,
+    Chemical,
+    EntityType,
+    EntityTypeValue,
+    NameResolved,
+    ParameterPropertyType,
+    PropertyTypeValue,
+    ReactionActionAction,
+    ReactionActionList,
+    ReactionList,
+    ReactionSmiles,
+    Source,
+    State,
+)
+
+__all__ = [
+    "Appearance",
+    "Chemical",
+    "EntityType",
+    "EntityTypeValue",
+    "NameResolved",
+    "ParameterPropertyType",
+    "PropertyTypeValue",
+    "ReactionActionList",
+    "ReactionActionAction",
+    "ReactionList",
+    "ReactionSmiles",
+    "Source",
+    "State",
+]

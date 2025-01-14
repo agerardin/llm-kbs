@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "uspto"
+version = "0.1.0"
+description = ""
+authors = ["Antoine Gerardin <antoine.gerardin@nextonicsolutions.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+xsdata-pydantic = {extras = ["cli", "lxml"], version = "^24.5"}
+pydantic = "^2.10.5"
+langchain = "^0.3.14"
+langchain-openai = "^0.2.14"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
